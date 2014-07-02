@@ -14,7 +14,6 @@ end
 
 counter=0
 contents.each do |row|
-	new_zip=clean_zipcode(row[:zipcode])
-	puts "#{row[:first_name]} #{new_zip} "
+	puts "#{row[:first_name]} #{clean_zipcode(row[:zipcode])}"
 end
 
